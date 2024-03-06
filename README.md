@@ -7,7 +7,7 @@
 <!-- LOGO DO PROJETO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/XcomfritaS2/Xadrez-ABH/">
     <img src="images/logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
@@ -16,14 +16,14 @@
   <p align="center">
     Jogo de Xadrez multiplayer local desenvolvido para semana Paulo Freire
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Documentos »</strong></a>
+    <a href="https://github.com/XcomfritaS2/Xadrez-ABH/"><strong>Documentos »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">Ver a Demo</a>
+    <a href="https://github.com/XcomfritaS2/Xadrez-ABH/">Ver a Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Reportar um Bug</a>
+    <a href="https://github.com/XcomfritaS2/Xadrez-ABH/issues">Reportar um Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Pedir uma Feature</a>
+    <a href="https://github.com/XcomfritaS2/Xadrez-ABH/issues">Pedir uma Feature</a>
   </p>
 </div>
 
@@ -108,12 +108,8 @@ Se você tiver alguma sugestão que possa melhorar o fluxo de trabalho aqui no g
 
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[contributors-shield]: https://img.shields.io/github/contributors/XcomfritasS2/Xadrez-ABH.svg?style=for-the-badge
+[contributors-url]: https://github.com/XcomfritasS2/Xadrez-ABH/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/XcomfritaS2/Xadrez-ABH.svg?style=for-the-badge
+[forks-url]: https://github.com/XcomfritaS2/Xadrez-ABH/network/members
 [product-screenshot]: images/screenshot.png
