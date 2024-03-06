@@ -5,8 +5,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- LOGO DO PROJETO -->
@@ -106,7 +104,7 @@ Se você tiver alguma sugestão que possa melhorar o fluxo de trabalho aqui no g
 2. Crie a sua Branch para sua mecânica (`git checkout -b Mecânica/MecânicasFoda`)
 3. Commit suas mudanças (`git commit -m 'adicione umas MecânicasFoda'`)
 4. Envie para a Branch (`git push origin Mecânica/MecânicasFoda`)
-5. Abar um Pull Request
+5. Abra um Pull Request
 
 <p align="right">(<a href="#top">voltar pro topo</a>)</p>
 
