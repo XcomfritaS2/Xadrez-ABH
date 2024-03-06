@@ -58,7 +58,8 @@
 
  Um jogo de Xadrez multiplayer local, quando uma peça é "atacada" elas entram em uma "arena" pra lutarem entre si, aonde ocorre uma seleção aleatória de mini-games
 
-<p align="right">(<a href="#top">voltar pro topo</a>)</p>
+
+ 
 
 
 
