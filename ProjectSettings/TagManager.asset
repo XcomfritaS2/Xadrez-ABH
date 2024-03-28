@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - MovePlate
   - TextoVence
   - TextoReset
+  - MovePlate
   layers:
   - Default
   - TransparentFX

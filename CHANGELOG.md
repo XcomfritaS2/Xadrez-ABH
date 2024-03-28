@@ -1,8 +1,9 @@
 # Changelog
 
-## v1.0.0
+## v1.1.0
 
 ### Adicionado ou modificado
-- Adicionado esse changelog :)
-- Logo e imagem adicionados (Completamente placeholders)
-- Adicionado um ReadMe
+- Menu principal do jogo
+- Crossfade na mudança de cenas
+- Nova fonte
+- Pasta pra animações
