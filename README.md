@@ -108,8 +108,8 @@ Se você tiver alguma sugestão que possa melhorar o fluxo de trabalho aqui no g
 
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/XcomfritasS2/Xadrez-ABH.svg?style=for-the-badge
-[contributors-url]: https://github.com/XcomfritasS2/Xadrez-ABH/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/XcomfritaS2/Xadrez-ABH.svg?style=for-the-badge
+[contributors-url]: https://github.com/XcomfritaS2/Xadrez-ABH/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/XcomfritaS2/Xadrez-ABH.svg?style=for-the-badge
 [forks-url]: https://github.com/XcomfritaS2/Xadrez-ABH/network/members
 [product-screenshot]: images/screenshot.png
