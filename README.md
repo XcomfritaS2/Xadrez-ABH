@@ -8,7 +8,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/XcomfritaS2/Xadrez-ABH/">
-    <img src="images/logo.jpg" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Xadrez-ABH</h3>
