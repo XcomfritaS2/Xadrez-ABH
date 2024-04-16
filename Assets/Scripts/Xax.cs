@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+using static Imager;
 
 public class Xax : MonoBehaviour
 {
+
     public GameObject controle;
     public GameObject MovePlate;
 
@@ -137,26 +140,10 @@ public class Xax : MonoBehaviour
 
 
             case "Peao_P":
-                if (yCampo == 6)
-                {
-                    PeaoMovePlate(xCampo, yCampo - 1);
-                    PeaoMovePlate(xCampo, yCampo - 2);
-                }
-                else
-                {
-                    PeaoMovePlate(xCampo, yCampo - 1);
-                }
+                PeaoMovePlate(xCampo, yCampo - 1, -1, 6);
                 break;
             case "Peao_B":
-                if (yCampo == 1)
-                {
-                    PeaoMovePlate(xCampo, yCampo + 1);
-                    PeaoMovePlate(xCampo, yCampo + 2);
-                }
-                else
-                {
-                    PeaoMovePlate(xCampo, yCampo + 1);
-                }
+                PeaoMovePlate(xCampo, yCampo + 1, 1, 1);
                 break;
         }
     }
@@ -170,14 +157,14 @@ public class Xax : MonoBehaviour
 
         while (sc.PositionNoCampo(x, y) && sc.GetPosition(x, y) == null)
         {
-            MovePlateSpawn(x, y);
+            MovePlateSpawn(x, y, false);
             x += xIncrement;
             y += yIncrement;
         }
 
         if (sc.PositionNoCampo(x, y) && sc.GetPosition(x, y).GetComponent<Xax>().player != player)
         {
-            MovePlateAtaqueSpawn(x, y);
+            MovePlateAtaqueSpawn(x, y, true);
         }
     }
 
@@ -214,39 +201,45 @@ public class Xax : MonoBehaviour
 
             if (xp == null)
             {
-                MovePlateSpawn(x, y);
-            } else if (xp.GetComponent<Xax>().player != player)
+                MovePlateSpawn(x, y, false);
+            }
+            else if (xp.GetComponent<Xax>().player != player)
             {
-                MovePlateAtaqueSpawn(x, y);
+                MovePlateAtaqueSpawn(x, y, true);
             }
         }
     }
 
-    public void PeaoMovePlate(int x, int y)
+    public void PeaoMovePlate(int x, int y, int d, int inicial)
     {
         Main sc = controle.GetComponent<Main>();
         if (sc.PositionNoCampo(x, y))
         {
             if (sc.GetPosition(x, y) == null)
             {
-                MovePlateSpawn(x, y);
+                MovePlateSpawn(x, y, false);
+            }
+
+            if ((yCampo == inicial) && sc.GetPosition(x, y + d) == null)
+            {
+                MovePlateSpawn(x, y + d, false);
             }
 
             if (sc.PositionNoCampo(x + 1, y) && sc.GetPosition(x + 1, y) != null &&
                 sc.GetPosition(x + 1, y).GetComponent<Xax>().player != player)
             {
-                MovePlateAtaqueSpawn(x + 1, y);
+                MovePlateAtaqueSpawn(x + 1, y, true);
             }
 
             if (sc.PositionNoCampo(x - 1, y) && sc.GetPosition(x - 1, y) != null &&
                 sc.GetPosition(x - 1, y).GetComponent<Xax>().player != player)
             {
-                MovePlateAtaqueSpawn(x - 1, y);
+                MovePlateAtaqueSpawn(x - 1, y, true);
             }
         }
     }
 
-    public void MovePlateSpawn(int matrixX, int matrixY)
+    public void MovePlateSpawn(int matrixX, int matrixY, bool atk)
     {
         float x = matrixX;
         float y = matrixY;
@@ -260,11 +253,12 @@ public class Xax : MonoBehaviour
         GameObject mp = Instantiate(MovePlate, new Vector3(x, y, -3.0f), Quaternion.identity);
 
         MovePlate mpScript = mp.GetComponent<MovePlate>();
+        mpScript.ataque = false;
         mpScript.SetReference(gameObject);
         mpScript.SetCoords(matrixX, matrixY);
     }
 
-    public void MovePlateAtaqueSpawn(int matrixX, int matrixY)
+    public void MovePlateAtaqueSpawn(int matrixX, int matrixY, bool atk)
     {
         float x = matrixX;
         float y = matrixY;

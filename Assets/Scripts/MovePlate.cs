@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Imager;
 
 public class MovePlate : MonoBehaviour
 {
@@ -43,6 +44,9 @@ public class MovePlate : MonoBehaviour
         reference.GetComponent<Xax>().SetCoords();
 
         controle.GetComponent<Main>().SetPosition(reference);
+
+        //atualiza os assets
+        IMAGER.UpdateImage();
 
         controle.GetComponent<Main>().ProxTurno();
 

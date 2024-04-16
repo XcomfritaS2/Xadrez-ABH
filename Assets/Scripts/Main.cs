@@ -1,25 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static Imager;
 
 public class Main : MonoBehaviour
 {
     public GameObject Piece;
 
-    private GameObject[,] positions = new GameObject[8, 8];
-    private GameObject[] playerPreto = new GameObject[16];
-    private GameObject[] playerBranco = new GameObject[16];
+    //defini essas variáveis pra facilitar a implementação da class Imager
+    public static Main MAIN { get; private set; } 
+    public GameObject[,] positions = new GameObject[8, 8];
+
+    public GameObject[] playerPreto = new GameObject[16];
+    public GameObject[] playerBranco = new GameObject[16];
 
     private string atualPlayer = "Branco";
 
     private bool gameOver = false;
 
-
     public void Start()
     {
-        playerBranco = new GameObject[]{
+        //defini a instancia do Main aqui
+        MAIN = this;
+    }
+    public void StartMain()
+    {
+        /*playerBranco = new GameObject[]{
             Create("Torre_B", 0, 0), Create("Cavalo_B", 1, 0), Create("Bispo_B", 2, 0), Create("Rainha_B", 3, 0),Create("Rei_B", 4, 0), Create("Bispo_B", 5, 0),
             Create("Cavalo_B", 6, 0), Create("Torre_B", 7, 0), Create("Peao_B", 0, 1), Create("Peao_B", 1, 1), Create("Peao_B", 2, 1), Create("Peao_B", 3, 1),
             Create("Peao_B", 4, 1), Create("Peao_B", 5, 1), Create("Peao_B", 6, 1), Create("Peao_B", 7, 1)};
@@ -33,7 +42,7 @@ public class Main : MonoBehaviour
         {
             SetPosition(playerPreto[i]);
             SetPosition(playerBranco[i]);
-        }
+        }*/
     }
 
     public GameObject Create(string name, int x, int y)
@@ -82,13 +91,15 @@ public class Main : MonoBehaviour
 
     public void ProxTurno()
     {
-        if (atualPlayer == "Branco")
+        //Modificações feitas para atender ao save
+        Color32 col = IMAGER.ImageCopy.texture.GetPixel(0, 0);
+        if (col.b == 255)
         {
-            atualPlayer = "Preto";
+            atualPlayer = "Branco";
         }
         else
         {
-            atualPlayer = "Branco";
+            atualPlayer = "Preto";
         }
     }
 
