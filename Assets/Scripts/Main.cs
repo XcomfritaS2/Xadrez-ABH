@@ -9,9 +9,10 @@ using static Imager;
 public class Main : MonoBehaviour
 {
     public GameObject Piece;
+    public GameObject JanelaModal;
 
     //defini essas variáveis pra facilitar a implementação da class Imager
-    public static Main MAIN { get; private set; } 
+    public static Main MAIN { get; private set; }
     public GameObject[,] positions = new GameObject[8, 8];
 
     public GameObject[] playerPreto = new GameObject[16];
@@ -53,6 +54,7 @@ public class Main : MonoBehaviour
         xa.SetXCampo(x);
         xa.SetYCampo(y);
         xa.Activate();
+        xa.tag = "piece";
         return obj;
     }
 
@@ -110,5 +112,13 @@ public class Main : MonoBehaviour
         GameObject.FindGameObjectWithTag("TextoVence").GetComponent<Text>().enabled = true;
         GameObject.FindGameObjectWithTag("TextoVence").GetComponent<Text>().text = playerVencedor + " ganhou foi tudo";
         GameObject.FindGameObjectWithTag("TextoReset").GetComponent<Text>().enabled = true;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

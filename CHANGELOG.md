@@ -1,8 +1,15 @@
 # Changelog
 
+## v1.3.0
+
+- Organização geral
+- Janela modal para mudança de cenas
+- Minigame do Peão, Torre e Cavalo
+- Protótipo do jogo do Rei em andamento
+
+
 ## v1.2.0
 
-### Adicionado ou modificado
 - Sistema de save (Feito pelo João)
 - Minigame da Rainha - Skillcheck (Feito pelo João)
 - Mecânica de movimento do peão re-programada

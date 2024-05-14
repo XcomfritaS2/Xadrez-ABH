@@ -85,6 +85,10 @@ public class Xax : MonoBehaviour
 
             InitiateMovePlates();
         }
+        else
+        {
+            DestroyMovePlates();
+        }
     }
 
     public void DestroyMovePlates()
