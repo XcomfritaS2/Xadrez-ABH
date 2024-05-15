@@ -1,5 +1,11 @@
 # Changelog
 
+
+## v1.3.1
+
+- Minigame do Bispo
+- O fim está próximo
+
 ## v1.3.0
 
 - Organização geral
