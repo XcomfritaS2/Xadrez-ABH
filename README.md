@@ -14,7 +14,7 @@
 <h3 align="center">Xadrez-ABH</h3>
 
   <p align="center">
-    Jogo de Xadrez multiplayer local desenvolvido para semana Paulo Freire
+    Jogo de Xadrez multiplayer local desenvolvido para semana Paulo Freire (Finalizado)
     <br />
     <a href="https://github.com/XcomfritaS2/Xadrez-ABH/"><strong>Documentos »</strong></a>
     <br />
