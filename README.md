@@ -86,7 +86,7 @@ Unity Editor Version 2022.3.20f1
 
 1. Clique em "Releases" ou "Tags"
 2. Selecione a versão que você queira instalar
-3. Descomapcte o .rar 
+3. Descompacte o .rar 
 4. Abra "Xadrez.exe"
 
 <p align="right">(<a href="#top">voltar pro topo</a>)</p>
